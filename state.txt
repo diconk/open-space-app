@@ -1,0 +1,22 @@
+App.jsx
+State : isPreload, authUser
+Action: SET_AUTH_USER, SET_IS_PRELOAD, UNSET_AUTH_USER
+Thunk Function: asyncPreloadProcess()
+
+Halaman Registrasi
+Thunk Function: asyncRegisterUser()
+
+Halaman Login
+State : authUser
+Action: SET_AUTH_USER, UNSET_AUTH_USER
+Thunk Function: asyncSetAuthUser()
+
+Homepage
+State : talks, users, authUser
+Action: ADD_TALK, TOGGLE_LIKE_TALK, RECEIVE_TALKS, RECEIVE_USERS
+Thunk Function: asyncPopulateUsersAndTalks(), asyncAddTalk(), asyncToogleLikeTalk(), asyncReceiveUsersAndTalks()
+
+Halaman Detail Talk
+State : talkDetail, authUser
+Action: RECEIVE_TALK_DETAIL, CLEAR_TALK_DETAIL, ADD_TALK, TOGGLE_LIKE_TALK_DETAIL
+Thunk Function: asyncReceiveTalkDetail(), asyncAddTalk(),asyncToogleLikeTalkDetail()
